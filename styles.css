@@ -1,0 +1,482 @@
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #0a0a0f; /* Dark background */
+}
+
+
+
+
+
+/* About Me Section */
+#about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    background: linear-gradient(135deg, #3b0767, #67189c, #ff008e);
+    background-size: 300% 300%;
+    animation: gradientAnimation 5s infinite ease-in-out;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+/* Text Content */
+.content {
+    flex: 1;
+}
+
+.content h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    position: relative;
+    color: #ffffff;
+}
+
+.content h1::after {
+    content: '→';
+    font-size: 2rem;
+    color: #ff008e;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+.content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: #d1d5db; /* Light gray text */
+}
+
+.contact-button {
+    background-color: #ff008e;
+    color: #ffffff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ff4ab7;
+}
+
+/* Image Container */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* Decorative Dots */
+#about-me::after {
+    content: '';
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    width: 150px;
+    height: 150px;
+    background-image: radial-gradient(circle, #ffffff 10%, transparent 10%);
+    background-size: 15px 15px;
+    opacity: 0.3;
+}
+
+/*Skills css part*/
+#skills {
+    padding-top: 20px; /* Optional: Adds some spacing from the very top */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #151515, #67189c,#67189c);
+    background-size: 300% 300%;
+    animation: gradientAnimation 5s infinite ease-in-out;
+
+
+  }
+  
+  .skill-content {
+    text-align:center; /* Aligns the content to the left */
+  }
+  
+  .skill-content h1 {
+    font-size: 2.9em; /* Adjusts the size of the heading */
+    font-weight: bold; /* Makes the text bold */
+    margin: 0; /* Removes extra margin around the heading */
+    position: relative; /* Enables positioning adjustments */
+    top: -200px; /* Moves the heading upwards (negative value) */
+    font-family: 'Arial', sans-serif;
+  }
+  .skill-content body {
+    background-color: #0a001f; /* Dark background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .icon-container1 {
+    display: flex;
+    gap: 50px; /* Space between icons */
+    height: 10px;
+  }
+  .icon {
+    width: 100px;
+    height: 100px;
+    background-color: #404041;
+    border: 2px solid rgba(21, 21, 21, 0.3); /* Light border */
+    border-radius: 50%; /* Makes the icons circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin-top: -100px;
+    
+  }
+    .icon:hover {
+        transform: scale(1.1); /* Slight zoom on hover */
+        box-shadow: 0 0 15px 3px rgb(255, 255, 255); /* Pinkish-purple glow */
+  }
+    .icon img {
+        width: 100%;  /* Make the image fill the icon's width */
+        height: 100%;  /* Make the image fill the icon's height */
+        object-fit: cover;  /* Ensure the image covers the entire circle without distortion */
+        border-radius: 50%;  /
+  }
+
+  .icon-container2 {
+    display: flex;
+    gap: 50px; /* Space between icons */
+    height: 10px;
+  }
+  .icon2 {
+    width: 100px;
+    height: 100px;
+    background-color: #575555;
+    border: 2px solid rgba(21, 21, 21, 0.3); /* Light border */
+    border-radius: 50%; /* Makes the icons circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    margin-top: 90px;
+    
+    
+  }
+    .icon2:hover {
+        transform: scale(1.1); /* Slight zoom on hover */
+        box-shadow: 0 0 15px 3px rgb(252, 251, 251); /* Pinkish-purple glow */
+  }
+    .icon2 img {
+        width: 100%;  /* Make the image fill the icon's width */
+        height: 100%;  /* Make the image fill the icon's height */
+        object-fit: cover;  /* Ensure the image covers the entire circle without distortion */
+        border-radius: 50%;  /
+  }
+
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #121111;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #eeea19; /* Highlight effect on hover */
+  }
+  
+  section {
+    padding: 100px 20px;
+  }
+  
+  section h1 {
+    text-align: left;
+    font-size: 2rem;
+    color: #333;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+  }
+
+  section h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: bold;
+   margin-top: -20px;
+   margin-bottom: 20px;
+   margin-right: 200px;
+   padding: 4px; /* Creates space between text and border */
+   background: linear-gradient(to right, #ffeb3b, #fdd835, #ecac0a);
+   
+  }
+  
+  section p {
+    text-align: left;
+    font-size: 1.2rem;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  }
+
+#skills h1{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/*Project boxes*/
+.tile-container {
+  display: grid;
+  grid-template-columns: repeat(2, 250px); /* Two columns */
+  gap: 400px;
+  padding: 20px;
+}
+
+.tile-container .tile:nth-child(3),
+    .tile-container .tile:nth-child(4) {
+      transform: translateY(-300px); /* Move tiles up */
+    }
+
+
+  .yellow-line {
+    position: absolute; /* Positioned relative to the page */
+    left: 50%; /* Center horizontally */
+    top: 1500px; /* Start from the top edge */
+    height:150%; /* Full height of the page */
+    width: 4px; /* Thickness of the line */
+    background-color: yellow; /* Yellow color */
+    transform: translateX(-50%); /* Adjust to center perfectly */
+    }
+
+
+#project h1{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 2.9em; /* Adjusts the size of the heading */
+  margin: 0; /* Removes extra margin around the heading */
+  position: relative; /* Enables positioning adjustments */
+  top: -45px; /* Moves the heading upwards (negative value) */
+  
+    
+}
+
+
+
+#project h3{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.6em; /* Adjusts the size of the heading */
+  top: -45px; /* Moves the heading upwards (negative value) */
+  
+    
+}
+
+#project p{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.0em; /* Adjusts the size of the heading */
+  color: #0a001f;
+  margin-top: -16px;
+  
+    
+}
+
+.tile {
+  background: linear-gradient(to right, #ffffff, #ffffff, #fafafa);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 450px; /* Width of the box */
+  height: 350px;
+  margin-left: 40px;
+}
+
+.tile img {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  width: 6cm; /* Set the initial width */
+  height: 6.4cm; 
+}
+
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 20px rgb(245, 224, 66), 5px 5px 10px rgba(255, 255, 255, 0.3); /* Multi-layered shadow */
+
+}
+
+/*coding journey*/
+#codeinfo{
+  padding-top: 20px; /* Optional: Adds some spacing from the very top */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: 300% 300%;
+  background: linear-gradient(135deg, #3b0767, #67189c, #ff008e);
+}
+
+
+
+
+#code section {
+  width:100%;
+  padding:20px 0;
+  margin-left: 100px;
+  margin-right: 200px;
+  
+}
+#code h1{
+  font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top:20px;
+    font-size: 2.9em;
+    margin-bottom: 90px;
+}
+#code section h2 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #000000;
+    font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: bold;
+   margin-top: -20px;
+   margin-bottom: 20px;
+   margin-right: 200px;
+   padding: 4px; /* Creates space between text and border */
+   background: linear-gradient(to right, rgb(234, 181, 236), rgb(180, 65, 237));
+   
+  }
+
+  .leet-link {
+    color: #fffc2f;  /* Pink color */
+    font-size: 40px;  /* Icon size */
+    text-decoration: none;  /* Remove underline */
+    transition: color 0.3s ease;  /* Smooth color transition */
+  }
+  
+  .leet-link:hover {
+    color: #fadb0f;  /* Purple color on hover */
+  }
+  .kaggle-link {
+    color: #20A8D8;  /* Kaggle blue color */
+    font-size: 40px;  /* Icon size */
+    text-decoration: none;  /* Remove underline */
+    transition: color 0.3s ease;  /* Smooth color transition */
+  }
+  
+  .kaggle-link:hover {
+    color: #1C7D91;  /* Darker blue on hover */
+  }
+  .github-link {
+    color: #333;  /* Default GitHub dark color */
+    font-size: 40px;  /* Icon size */
+    text-decoration: none;  /* Remove underline */
+    transition: color 0.3s ease;  /* Smooth color transition */
+  }
+  
+  .github-link:hover {
+    color: #1d142a;  /* Purple color on hover */
+  }
+    
+
+
+
+
+/*Certification css*/
+#certifications {
+  padding-top: 20px; /* Optional: Adds some spacing from the very top */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-size: 300% 300%;
+  background: linear-gradient(to right, #ffeb3b, #fdd835, #ecac0a); /* Static gradient */
+}
+#certifications h1{
+  font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: 2.9em;
+    margin-top: -390px;
+}

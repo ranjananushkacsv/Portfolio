@@ -1,0 +1,82 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0f; /* Dark background */
+    color: #ffffff;
+}
+
+#projects {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+/* Project Item */
+.project {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.project img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.project-info {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    text-align: left;
+    color: #ffffff;
+}
+
+.project-info h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #d1d5db;
+}
+
+/* Arrow Styling */
+.arrow {
+    font-size: 2rem;
+    color: #ff008e; /* Pink arrow */
+    margin-bottom: 2rem;
+}
+
+.arrow span {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
